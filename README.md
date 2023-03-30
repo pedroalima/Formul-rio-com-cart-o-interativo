@@ -24,9 +24,9 @@ Os usuários devem ser capazes de:
 ### Screenshots
 
 <html>
+<h4>Layout mobile</h4>
+    <img src="./img/screenshot-mobile.png" width="300px">
 <!--
-    <h4>Layout mobile</h4>
-    <img src="./assets/img/screenshot-mobile.png" width="300px">
     <h4>Menu mobile</h4>
     <img src="./assets/img/screenshot-mobile-menu.png" width="300px">
     <h4>Modal de projetos</h4>
@@ -43,7 +43,7 @@ Os usuários devem ser capazes de:
 ## Minha caminhada
 
 - [x] Preparativos do layout com mobile-first 
-- [ ] Cards header
+- [x] Cards header
 - [ ] Form
 - [ ] Form complete state
 - [ ] Mobile layout
