@@ -4,9 +4,9 @@
     --active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
     --input-errors: hsl(0, 100%, 66%);
     --background-second: hsl(0, 0%, 100%);
-    --light-grayish-violet: hsl(270, 3%, 87%);
+    --color-border: hsl(270, 3%, 87%);
     --dark-grayish-violet: hsl(279, 6%, 55%);
-    --very-dark-violet: hsl(278, 68%, 11%);
+    --color-font-primary: hsl(278, 68%, 11%);
     --color-font-cards: #FFF;
     --primary-font: 'Space Grotesk', sans-serif;
 }
@@ -32,6 +32,16 @@ header {
     padding: 2rem 1rem 2.5rem;
 }
 
+main {
+    background: var(--background-second);
+}
+
+/* Header */
+
+.header__card {
+    width: 280px;
+}
+
 .header__container-card-back {
     text-align: end;
     position: relative;
@@ -49,20 +59,22 @@ header {
     left: 1rem;
 }
 
-.header__card {
-    width: 280px;
-}
-
-.header__content-card-back p {
-    font-size: 12px;
-    color: var(--color-font-cards);
-    letter-spacing: 1px;
+.header__card:nth-child(1) {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.2);
 }
 
 .header__content-card-front {
     position: absolute;
     top: 1rem;
     left: 1rem;
+}
+
+.header__content-card-back p {
+    font-size: 12px;
+    color: var(--color-font-cards);
+    letter-spacing: 1px;
 }
 
 .header__content-card-front p {
@@ -84,4 +96,73 @@ header {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+/* Formulário */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 1.5rem 3rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.3rem;
+}
+
+.form__item:nth-child(3) {
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.form__date-cvc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form__date-cvc:nth-child(2){
+    width: 41%;
+}
+
+.form__item input {
+    color: var(--color-font-primary);
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.form__item input::placeholder {
+    color: var(--color-border);
+}
+
+.date-cvc__itens {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.date-cvc__itens input {
+    width: 22vw;
+    text-align: center;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--color-font-primary);
+}
+
+.button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background: var(--color-font-primary);
+    color: var(--color-font-cards);
 }
