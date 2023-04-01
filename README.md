@@ -24,11 +24,11 @@ Os usuários devem ser capazes de:
 ### Screenshots
 
 <html>
-<h4>Layout mobile</h4>
-    <img src="./img/screenshot-mobile.png" width="300px">
+    <h4>Layout mobile</h4>
+    <img src="./assets/img/screenshot-mobile.png" width="300px">
+    <h4>Layout mobile with form complete</h4>
+    <img src="./assets/img/screenshot-mobile-form-complete.png" width="300px">
 <!--
-    <h4>Menu mobile</h4>
-    <img src="./assets/img/screenshot-mobile-menu.png" width="300px">
     <h4>Modal de projetos</h4>
     <img src="./assets/img/screenshot-mobile-modal-products.png" width="300px">
     <h4>Modal de agradecimento</h4>
