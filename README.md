@@ -20,6 +20,7 @@ Os usuários devem ser capazes de:
 
 - Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo, mobile (375px) ou desktop (1440px)
 - Visualizar os estados de foco para todos os elementos interativos na página
+- Visualizar a interação dos dados que forem incluídos no formulário sendo replicados na imagem do cartão de crédito
 
 ### Screenshots
 
@@ -47,9 +48,12 @@ Os usuários devem ser capazes de:
 - [x] Form
 - [x] Form complete state
 - [x] Mobile layout
+- [x] Feat Cardholder Name
+- [ ] Feat Card Number
+- [ ] Feat Date and CVC
 - [ ] Desktop layout
-- [ ] Estado de foco dos elementos
-- [ ] JS functions
+- [ ] Focus states
+
 
 ### Propriedades
 
