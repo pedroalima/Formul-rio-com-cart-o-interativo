@@ -45,8 +45,8 @@ Os usuários devem ser capazes de:
 - [x] Preparativos do layout com mobile-first 
 - [x] Cards header
 - [x] Form
-- [ ] Form complete state
-- [ ] Mobile layout
+- [x] Form complete state
+- [x] Mobile layout
 - [ ] Desktop layout
 - [ ] Estado de foco dos elementos
 - [ ] JS functions
