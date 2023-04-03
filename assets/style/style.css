@@ -67,6 +67,7 @@ main {
 
 .header__content-card-front {
     position: absolute;
+    width: 87%;
     top: 1rem;
     left: 1rem;
 }
@@ -89,13 +90,16 @@ main {
 .header__content-text {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
 }
 
 .header__content-text p {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.header__content-text div {
+    display: flex;
 }
 
 
