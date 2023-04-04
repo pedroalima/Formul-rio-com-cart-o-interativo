@@ -1,5 +1,5 @@
-# Formulário com cartão interativo
-Solução para criar uma página de formulário com cartão interativo em HTML, CSS e JavaScript, responsivo para mobile e desktop.
+# Formulário de cartão de crédito
+Solução para criar um formulário de cartão de crédito com interatividade na imagem do cartão
 
 ## Índice
 
@@ -18,8 +18,8 @@ Solução para criar uma página de formulário com cartão interativo em HTML, 
 
 Os usuários devem ser capazes de:
 
-- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo, mobile (375px) ou desktop (1440px)
-- Visualizar os estados de foco para todos os elementos interativos na página
+- Visualizar o layout ideal para o site, dependendo do tamanho da tela do dispositivo, mobile (375px) ou desktop (1360px)
+
 - Visualizar a interação dos dados que forem incluídos no formulário, sendo replicados na imagem do cartão de crédito
 
 ### Screenshots
@@ -27,18 +27,16 @@ Os usuários devem ser capazes de:
 <html>
     <h4>Layout mobile</h4>
     <img src="./assets/img/screenshot-mobile.png" width="300px">
+    <h4>Layout mobile with data blank</h4>
+    <img src="./assets/img/screenshot-mobile-blank.png" width="300px">
     <h4>Layout mobile with form complete</h4>
     <img src="./assets/img/screenshot-mobile-form-complete.png" width="300px">
-<!--
-    <h4>Modal de projetos</h4>
-    <img src="./assets/img/screenshot-mobile-modal-products.png" width="300px">
-    <h4>Modal de agradecimento</h4>
-    <img src="./assets/img/screenshot-mobile-modal-acknow.png" width="300px">
-    <h4>Layout desktop</h4>
+    <h4>Layout desktop </h4>
     <img src="./assets/img/screenshot-desktop.png" width="920px">
-    <h4>Modal de agradecimento</h4>
-    <img src="./assets/img/screenshot-desktop-agradecimento.png" width="920px">
--->
+    <h4>Layout desktop with data blank</h4>
+    <img src="./assets/img/screenshot-desktop-blank.png" width="920px">
+    <h4>Layout desktop with form complete</h4>
+    <img src="./assets/img/screenshot-desktop-form-complete.png" width="920px">
 </html>
 
 ## Minha caminhada
@@ -48,10 +46,9 @@ Os usuários devem ser capazes de:
 - [x] Form
 - [x] Form complete state
 - [x] Mobile layout
-- [x] Feature cardholder name, card number, date and cVC
+- [x] Feature cardholder name, card number, date and CVC
 - [x] Feature submit
-- [ ] Desktop layout
-- [ ] Focus states
+- [x] Desktop layout
 
 
 ### Propriedades
@@ -60,8 +57,8 @@ Os usuários devem ser capazes de:
 - Semântica HTML
 - CSS BEM
 - CSS Flexbox
-- CSS Grid
-- CSS Reaproveitável, limpo e flexível
+- JavaScript DOM manipulation
+- JavaScript data flow
 
 ### Meu aprendizado
 ...
