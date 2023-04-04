@@ -48,17 +48,18 @@
 
     <main>
 
-        <form class="form">
+        <form id="form" class="form">
 
             <div class="form__item">
                 <label class="label" for="cardNameInput">Cardholder Name</label>
                 <input type="text" id="cardNameInput" placeholder="e.g. Jane Appleseed" maxlength="16">
+                <small class="error">message error</small>
             </div>
 
             <div class="form__item">
                 <label class="label" for="cardNumberInput">Card Number</label>
                 <input type="text" id="cardNumberInput" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
-                <small>Wrong format, numbers only</small>
+                <small class="error">message error</small>
             </div>
 
             <div class="form__item">
@@ -68,15 +69,14 @@
                     <div class="date-cvc__itens">
                         <input type="text" id="monthInput" placeholder="MM" maxlength="2">
                         <input type="text" id="yearsInput" placeholder="YY" maxlength="2">
+                        <small class="error">message error</small>
                     </div>
-                    
-                    <small>can't be blank</small>
                 </div>
 
                 <div class="form__date-cvc">
                     <label class="label" for="cvc">CVC</label>
                     <input type="text" placeholder="e.g. 123" id="cvcInput" maxlength="3">
-                    <small>can't be blank</small>
+                    <small class="error">message error</small>
                 </div>
             </div>
 
@@ -86,7 +86,7 @@
 
         </form>
 
-        <section class="form-complete form">
+        <section id="formComplete" class="form-complete form hide">
 
             <div class="form-complete__container-icon">
                 <img class="form-complete__icon" src="./assets/img/icon-complete.svg" alt="">
@@ -97,7 +97,7 @@
                 <p class="form-complete__description">We've added your card details</p>
             </div>
 
-            <button type="button" class="form-complete__button button">Continue</button>
+            <button type="button" id="formCompleteButton" class="form-complete__button button">Continue</button>
 
         </section>
 

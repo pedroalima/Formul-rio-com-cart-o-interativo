@@ -141,12 +141,12 @@ main {
     position: absolute;
     top: 67px;
     left: 3px;
-    visibility: hidden;
 }
 
-.form__item small {
+.error {
     font-size: 11px;
     color: var(--input-errors);
+    visibility: hidden;
 }
 
 .form__date-cvc {
@@ -160,16 +160,16 @@ main {
     width: 45%;
 }
 
-.form__date-cvc > small {
-    position: absolute;
-    top: 67px;
-    left: 3px;
-    visibility: hidden;
-}
-
 .date-cvc__itens {
     display: flex;
     gap: 0.4rem;
+    position: relative;
+}
+
+.date-cvc__itens > small {
+    position: absolute;
+    top: 45px;
+    left: 3px;
 }
 
 .date-cvc__itens input {
@@ -192,6 +192,7 @@ main {
     background: var(--color-font-primary);
     color: var(--color-font-cards);
 }
+
 
 /* Fomulário completo */
 
@@ -220,4 +221,8 @@ main {
 /* desabilitar menu */
 .hide {
     display: none;
+}
+
+.error-visible {
+    visibility: visible;
 }

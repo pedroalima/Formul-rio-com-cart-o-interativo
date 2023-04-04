@@ -61,3 +61,57 @@ function receiveCvc() {
 }
 
 cvcInput.oninput = () => receiveCvc();
+
+
+
+const form = document.querySelector('#form');
+const formCompleteButton = document.querySelector('#formCompleteButton');
+
+form.addEventListener('submit', (element) => {
+    element.preventDefault();
+
+    checkInputs();
+});
+
+formCompleteButton.addEventListener('click', () => {
+    alternationForms();
+})
+
+function checkInputs() {
+   const cardNameInputValue = cardNameInput.value;
+   const cardNumberInputValue = cardNumberInput.value;
+   const monthInputValue = monthInput.value;
+   const cvcInputValue = cvcInput.value;
+
+   if (!cardNameInputValue) {
+    setErrorFor(cardNameInput, "can't be blank");
+    } 
+    else if (cardNumberInputValue === '') {
+        setErrorFor(cardNumberInput, "can't be blank");
+    } 
+    else if (monthInputValue === '') {
+        setErrorFor(monthInput, "can't be blank");
+    } 
+    else if (cvcInputValue === '') {
+        setErrorFor(cvcInput, "can't be blank");
+    } 
+    else {
+    alternationForms();
+    }
+}
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = message;
+    small.className = 'error error-visible';
+}
+
+const formComplete = document.querySelector('#formComplete')
+
+function alternationForms() {
+    form.classList.toggle('hide');
+    formComplete.classList.toggle('hide');
+
+}
