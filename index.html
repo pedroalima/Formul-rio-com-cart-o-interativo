@@ -12,38 +12,38 @@
 <body>
 
     <header>
+        <div class="header__container">
+            <div class="header__container-card-back">
 
-        <div class="header__container-card-back">
+                <img class="header__card" src="./assets/img/bg-card-back.png" alt="Imagem do verso de um cartão de crédito">
+                
+                <div class="header__content-card-back">
+                    <p id="cardCvc">000</p>
+                </div>
 
-            <img class="header__card" src="./assets/img/bg-card-back.png" alt="Imagem do verso de um cartão de crédito">
-            
-            <div class="header__content-card-back">
-                <p id="cardCvc">000</p>
             </div>
 
-        </div>
+            <div class="header__container-card-front">
+                
+                <img class="header__card" src="./assets/img/bg-card-front.png" alt="Imagem da frente de um cartão de crédito">
+                
+                <div class="header__content-card-front">
+                    <img src="./assets/img/card-logo.svg" alt="Logo do cartão">
+                    <p id="cardNumber">0000 0000 0000 0000</p>
 
-        <div class="header__container-card-front">
-            
-            <img class="header__card" src="./assets/img/bg-card-front.png" alt="Imagem da frente de um cartão de crédito">
-            
-            <div class="header__content-card-front">
-                <img src="./assets/img/card-logo.svg" alt="Logo do cartão">
-                <p id="cardNumber">0000 0000 0000 0000</p>
-
-                <div class="header__content-text">
-                    <p id="cardName">Jane Appleseed</p>
-                    <div>
-                        <p id="cardMonth">00</p>
-                        <p>/</p>
-                        <p id="cardYears">00</p>
+                    <div class="header__content-text">
+                        <p id="cardName">Jane Appleseed</p>
+                        <div>
+                            <p id="cardMonth">00</p>
+                            <p>/</p>
+                            <p id="cardYears">00</p>
+                        </div>
                     </div>
+                
                 </div>
             
             </div>
-        
         </div>
-
     </header>
 
     <main>
@@ -97,7 +97,7 @@
                 <p class="form-complete__description">We've added your card details</p>
             </div>
 
-            <button type="button" id="formCompleteButton" class="form-complete__button button">Continue</button>
+            <button type="submit" id="formCompleteButton" class="form-complete__button button">Continue</button>
 
         </section>
 
